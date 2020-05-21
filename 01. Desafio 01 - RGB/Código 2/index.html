@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RGB Test</title>
+    <link rel="stylesheet" href="./css/style.css" />
+</head>
+<body>
+    <h1>RGB Test</h1>
+
+    <div class="grid">
+        <div class="colors"><strong>(R) Vermelho: </strong></div>
+            <div class="grid-item">
+                <input class="range" type="range" id="red" min="0" max="255" />
+            </div>
+            <div class="grid-item">
+                <input class="input" type="text" disabled id="red-value" />
+        </div>
+        <div class="colors"><strong>(G) Verde: </strong></div>
+            <div class="grid-item">
+                <input class="range" type="range" id="green" min="0" max="255"/>
+            </div>
+            <div class="grid-item">
+                <input class="input" type="text" disabled id="green-value"/>
+            </div>
+        <div class="colors"><strong>(B) Azul: </strong></div>
+            <div class="grid-item">
+                <input class="range" type="range" id="blue" min="0" max="255"/>
+            </div>
+            <div class="grid-item">
+                <input class="input" type="text" disabled id="blue-value"/>
+            </div>
+            <div class="grid-item"></div>
+            <div class="grid-item" align="center">
+                <div class="preview" id="preview"></div>
+            </div>
+        </div>
+    <script src="./js/script.js"></script>
+
+</body>
+</html>
